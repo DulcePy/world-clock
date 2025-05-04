@@ -1,6 +1,7 @@
 body {
   background-color: #f9f7fe;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://www.worldmap1.com/map/world/amp/world_map.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/164/830/original/worldmap.jpg?1746387315);
   background-size: cover;
   background-position: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
