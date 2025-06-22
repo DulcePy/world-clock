@@ -4,7 +4,8 @@ body {
     url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/164/830/original/worldmap.jpg?1746387315);
   background-size: cover;
   background-position: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Chakra Petch", sans-serif;
+  margin-bottom: 200px;
 }
 
 h1 {
@@ -15,26 +16,38 @@ h1 {
 h2 {
   margin: 0;
   line-height: 1.5;
+  color: #fff;
+  opacity: 0.7;
 }
 
 select {
   display: block;
   width: 100%;
   font-size: 16px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Chakra Petch", sans-serif;
+
   padding: 10px;
   border-radius: 4px;
   border: none;
+  background-color: rgba(238, 231, 231, 0.2);
+}
+
+select:focus {
+  border-color: #8f8c8c;
+  box-shadow: 0 0 1px 3px rgba(238, 231, 231, 0.5);
+  outline: none;
 }
 
 .container {
   max-width: 600px;
   margin: 50px auto;
   margin-bottom: 20px;
-  background-color: #fff;
   padding: 30px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 
 .city {
@@ -50,8 +63,8 @@ select {
 }
 
 .date {
-  font-weight: bold;
-  color: orangered;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .time {
@@ -67,12 +80,19 @@ select {
 footer {
   text-align: center;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 0.7;
 }
 
-.home {
-  color: orangered;
+.btn-home {
+  color: #fff;
   opacity: 0.7;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-home:hover {
+  opacity: 0.9;
 }
 
 footer a {
@@ -81,7 +101,25 @@ footer a {
   opacity: 0.7;
 }
 
-strong {
-  color: darkblue;
-  opacity: 0.7;
+@media (max-width: 500px) {
+  .time {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 400px) {
+  .time {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 350px) {
+  .city {
+    display: block;
+    padding: 8px 0 20px 0;
+  }
+
+  .time {
+    text-align: right;
+  }
 }

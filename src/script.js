@@ -60,7 +60,7 @@ function updateCity(event) {
     "A"
   )}</small></div>
     </div>
-    <a href="/" class="home">All cities</a>
+    <a href="/" class="btn-home"><i class="bi bi-arrow-left-circle"></i></a>
   `;
 }
 
